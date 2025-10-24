@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>marci2575</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1e40af',
+            accent:  '#f59e0b',
+            deepBlue: '#0d47a1'
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans antialiased">
+  <header class="bg-gray-900 shadow-sm sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-primary"><a href="index.html">marci2575</a></h1>
+      <nav>
+        <ul class="flex space-x-6 text-lg">
+          <li><a href="#about"    class="hover:text-primary transition">About me</a></li>
+          <li><a href="#skills"   class="hover:text-primary transition">Skills</a></li>
+          <li><a href="#projects" class="hover:text-primary transition">Projects</a></li>
+          <li><a href="https://github.com/marci2575"  class="hover:text-primary transition">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-8 space-y-16">
+    <section id="about" class="grid md:grid-cols-2 gap-8 items-center py-12">
+      <div>
+        <h2 class="text-3xl font-semibold mb-4 text-primary">About me</h2>
+        <p class="leading-relaxed">
+          I'm Marci, 16 years old, I like listening to music and traveling the world.
+        </p>
+        <p class="leading-relaxed">
+          I'm interested in Web Development and Linux.
+        </p>
+        <p class="leading-relaxed">
+          I like black cats.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <div class="w-48 h-48 flex items-center justify-center bg-gray-900 rounded-full shadow-lg text-4xl font-mono text-primary">
+          &lt;/&gt;
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="space-y-6 py-12">
+      <h2 class="text-3xl font-semibold text-primary">Skills</h2>
+      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <li class="bg-gray-900 p-4 rounded-lg shadow hover:shadow-md transition-all duration-200 transform-gpu hover:scale-105 hover:bg-deepBlue hover:text-white">
+          <span class="block text-center font-medium">HTML/CSS</span>
+        </li>
+        <li class="bg-gray-900 p-4 rounded-lg shadow hover:shadow-md transition-all duration-200 transform-gpu hover:scale-105 hover:bg-deepBlue hover:text-white">
+          <span class="block text-center font-medium">Python</span>
+        </li>
+        <li class="bg-gray-900 p-4 rounded-lg shadow hover:shadow-md transition-all duration-200 transform-gpu hover:scale-105 hover:bg-deepBlue hover:text-white">
+          <span class="block text-center font-medium">Linux</span>
+        </li>
+        <li class="bg-gray-900 p-4 rounded-lg shadow hover:shadow-md transition-all duration-200 transform-gpu hover:scale-105 hover:bg-deepBlue hover:text-white">
+          <span class="block text-center font-medium">Git</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="space-y-8 py-12">
+      <h2 class="text-3xl font-semibold text-primary">Projects</h2>
+
+      <article class="bg-gray-900 rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-200 transform-gpu hover:scale-105 hover:bg-deepBlue hover:text-white">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-2">My homepage</h3>
+          <p class="mb-4 text-gray-300">
+            My homepage built with Tailwind, where I introduce myself.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-primary text-white text-xs px-2 py-1 rounded">HTML</span>
+            <span class="bg-primary text-white text-xs px-2 py-1 rounded">Tailwind</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
